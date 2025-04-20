@@ -6,7 +6,7 @@ import {
   LineChart,
   Settings as SettingsIcon,
 } from "lucide-react";
-import { NavBar } from "@/components/ui/tubelight-navbar";
+import NavBar from './tubelight-navbar';
 
 export function NavBarDemo() {
   const navItems = [

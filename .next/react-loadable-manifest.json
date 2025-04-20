@@ -10,17 +10,5 @@
     "files": [
       "static/chunks/_app-pages-browser_node_modules_clerk_nextjs_dist_esm_app-router_keyless-actions_js.js"
     ]
-  },
-  "app\\analytics\\AIInsightsPanel.tsx -> ../../api/ai": {
-    "id": "app\\analytics\\AIInsightsPanel.tsx -> ../../api/ai",
-    "files": [
-      "static/chunks/_app-pages-browser_src_api_ai_ts.js"
-    ]
-  },
-  "store\\aiFeedbackStore.ts -> ../api/ai": {
-    "id": "store\\aiFeedbackStore.ts -> ../api/ai",
-    "files": [
-      "static/chunks/_app-pages-browser_src_api_ai_ts.js"
-    ]
   }
 }
