@@ -1,4 +1,137 @@
-# Forex Trading Journal Application
+# TaForex – Forex Trading Journal
+
+A modern, full-stack trading journal and analytics platform built with Next.js 14, TypeScript, Clerk authentication, and Vercel deployment. Track your trades, analyze performance, and manage your trading journey with powerful tools and beautiful UI.
+
+---
+
+## 🚀 Features
+
+- **Authentication:** Secure sign-in/sign-up with Clerk
+- **Dashboard:** Key metrics, equity curve, win rate, recent trades
+- **Trade Journal:** Add, edit, and review trades with rich details
+- **Analytics:** Visualize performance by pair, setup, and time
+- **Risk Calculator:** Calculate lot size and risk per trade
+- **Journal Notes:** Daily trading notes, mood tracking, and linking to trades
+- **Responsive UI:** Mobile-friendly, dark mode, animated with Framer Motion
+
+---
+
+## 🗂️ Project Structure
+
+```
+src/
+├── app/                  # Next.js App Router
+│   ├── page.tsx          # Main dashboard/landing page
+│   ├── analytics/        # Analytics views
+│   ├── journal/          # Journal entries
+│   ├── trades/           # Trade history
+│   ├── markets/          # Market info
+│   ├── layout.tsx        # Root layout
+│   └── useDashboardStats.ts # Custom dashboard stats hook
+├── components/
+│   ├── ui/               # Reusable UI components (NavBar, Card, etc.)
+│   ├── trades/           # Trade-related components
+│   ├── shared/           # Shared utilities (ImageUploader, etc.)
+│   └── ClientLayout.tsx  # Client-side layout wrapper
+├── store/                # Zustand state management
+├── types/                # TypeScript types
+├── styles/               # Global styles
+└── ...                   # Other utilities and config
+```
+
+---
+
+## ⚙️ Getting Started
+
+1. **Clone the repo:**
+   ```sh
+   git clone https://github.com/dyglo/TaForex.git
+   cd TaForex
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Set up environment variables:**
+   - Copy `.env.example` to `.env` and fill in your API keys and Clerk credentials.
+4. **Run locally:**
+   ```sh
+   npm run dev
+   ```
+5. **Deploy:**
+   - Deploy to Vercel for production. Set environment variables in the Vercel dashboard.
+
+---
+
+## 🔑 Environment Variables
+
+See `.env.example` for required variables:
+- `NEXT_PUBLIC_XAI_API_URL`
+- `NEXT_PUBLIC_XAI_API_KEY`
+- `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
+- `CLERK_SECRET_KEY`
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Auth:** Clerk
+- **State:** Zustand
+- **UI:** Tailwind CSS, Framer Motion, Lucide Icons, Recharts
+- **Deployment:** Vercel
+
+---
+
+## 📦 Main Components
+
+- `ClientLayout.tsx` – Handles client-side logic, wraps NavBar/Footer
+- `LandingDashboard.tsx` – Dashboard metrics and charts
+- `RiskCalculatorModal.tsx` – Risk and lot size calculator
+- `trades/` – Trade entry, trade list, trade analytics
+- `journal/` – Daily trading notes and mood tracking
+- `ui/` – Buttons, cards, navbars, input components
+
+---
+
+## 📈 Analytics & Charts
+
+- **Equity Curve:** Track account balance over time
+- **Performance by Pair/Setup:** Visual breakdowns
+- **Recent Trades:** Quick access to trade details
+
+---
+
+## 🛡️ Security & Best Practices
+
+- `.env` is git-ignored; never commit secrets
+- Clerk dev instance is used for staging; production requires a custom domain
+- All sensitive keys must be provided via environment variables
+
+---
+
+## 📝 License
+
+MIT (see LICENSE)
+
+---
+
+## 🙏 Credits
+
+Developed by dyglo and contributors. Inspired by best practices in trading analytics and modern web development.
+
+---
+
+## 💡 Roadmap
+
+- [ ] Production-ready Clerk setup (custom domain)
+- [ ] Payment integration (Stripe)
+- [ ] Advanced analytics & reporting
+- [ ] Multi-user support & sharing
+- [ ] Improved mobile UX
+- [ ] ...and more!
+
 
 ## Architecture Overview
 
