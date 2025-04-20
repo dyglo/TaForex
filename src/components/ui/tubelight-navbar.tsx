@@ -17,8 +17,9 @@ const navItems = [
 
 import { SignUpButton, UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
 
-export default function NavBar() {
+export default function NavBar({ items }: { items?: typeof navItems }) {
   const pathname = usePathname();
+  const navLinks = items || navItems;
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-transparent flex justify-center sm:mb-6">
       <div className="w-full max-w-screen-lg flex items-center justify-between px-2 sm:px-4 md:px-8 py-2 mt-2">
@@ -28,7 +29,7 @@ export default function NavBar() {
         </div>
         {/* Desktop menu on the right */}
         <ul className="hidden sm:flex items-center gap-3 bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-700 backdrop-blur-lg py-1 px-1 rounded-full shadow-lg">
-          {navItems.map((item) => {
+          {navLinks.map((item) => {
             const Icon = item.icon;
             const isActive = pathname === item.url;
             return (
