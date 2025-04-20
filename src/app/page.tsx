@@ -10,7 +10,6 @@ import { useTradeStore } from '../store/tradeStore';
 import ClerkZustandSync from '../components/ClerkZustandSync';
 import BalanceEditor from '../components/BalanceEditor';
 import { useUser } from '@clerk/nextjs';
-
 import { useDashboardStats } from './useDashboardStats';
 
 // CalendarModal component: Displays trades on a calendar grid

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Card from './ui/Card';
 import { useTradeStore } from '../store/tradeStore';
-import { useDashboardStats } from '../app/page'; 
+import { useDashboardStats } from '../app/useDashboardStats'; 
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts';
 
 export default function LandingDashboard() {
