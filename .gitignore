@@ -3,6 +3,7 @@ node_modules
 out
 dist
 .env
+.env.*
 .env.local
 .env.development
 .env.production
@@ -17,3 +18,6 @@ yarn-error.log*
 *.swp
 *.swo
 *.log
+
+# clerk configuration (can include secrets)
+/.clerk/
