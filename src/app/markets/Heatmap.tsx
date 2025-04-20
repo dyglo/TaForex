@@ -1,0 +1,42 @@
+"use client";
+import React, { useEffect, useRef } from "react";
+import styles from "./Markets.module.css";
+
+const Heatmap: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (containerRef.current) containerRef.current.innerHTML = "";
+    const script = document.createElement("script");
+    script.src = "https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js";
+    script.async = true;
+    script.innerHTML = JSON.stringify({
+      "width": "100%",
+      "height": "400",
+      "currencies": [
+        "EUR",
+        "USD",
+        "JPY",
+        "GBP",
+        "CHF",
+        "AUD",
+        "CAD",
+        "NZD"
+      ],
+      "isTransparent": true,
+      "colorTheme": "dark",
+      "locale": "en"
+    });
+    containerRef.current?.appendChild(script);
+    return () => { if (containerRef.current) containerRef.current.innerHTML = ""; };
+  }, []);
+
+  return (
+    <div className={styles.sectionCard}>
+      <div className={styles.sectionHeader}>Forex Heatmap</div>
+      <div ref={containerRef} className={styles.widgetContainer} />
+    </div>
+  );
+};
+
+export default Heatmap;

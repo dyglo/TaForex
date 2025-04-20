@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "css.validate": false,
+  "postcss.validate": true,
+  "tailwindCSS.includeLanguages": {
+    "css": "css"
+  }
+}

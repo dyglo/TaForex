@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: theme('colors.surface.DEFAULT');
+}
+
+@layer utilities {
+  .bg-surface-dark {
+    @apply bg-[#18181b];
+  }
+  .dark .bg-primary-dark {
+    @apply bg-black;
+  }
+  .bg-surface-card {
+    @apply bg-white;
+  }
+  .dark .bg-surface-cardDark {
+    @apply bg-[#18181b];
+  }
+}
+
+
+/* Smooth glowing border animation for Card components */
+.animate-glow {
+  box-shadow: 0 0 16px 4px rgba(56,189,248,0.5), 0 0 0 0 #000;
+  transition: box-shadow 0.3s;
+}

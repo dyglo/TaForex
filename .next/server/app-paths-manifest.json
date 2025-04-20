@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/trades/page": "app/trades/page.js",
+  "/analytics/page": "app/analytics/page.js",
+  "/trades/new/page": "app/trades/new/page.js"
+}

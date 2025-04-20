@@ -1,0 +1,29 @@
+.journal-input {
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  color: #111827;
+  transition: all 0.2s;
+  outline: none;
+}
+@media (prefers-color-scheme: dark) {
+  .journal-input {
+    border-color: #374151;
+    background-color: #111827;
+    color: #fff;
+  }
+}
+.journal-input::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+}
+@media (prefers-color-scheme: dark) {
+  .journal-input::placeholder {
+    color: #6b7280;
+  }
+}
+.journal-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px #60a5fa99, 0 4px 12px #60a5fa22;
+}

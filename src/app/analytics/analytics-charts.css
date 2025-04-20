@@ -1,0 +1,21 @@
+.analytics-bar {
+  width: 24px;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: height 0.3s;
+}
+.analytics-bar-blue { background: #60a5fa; }
+.analytics-bar-red { background: #f87171; }
+.analytics-bar-yellow { background: #fbbf24; }
+.analytics-bar-green { background: #34d399; }
+.analytics-bar-purple { background: #a78bfa; }
+.analytics-bar-pink { background: #f472b6; }
+.analytics-bar-gold { background: #facc15; }
+.analytics-bar-empty { background: #222; }
+.analytics-bar-label {
+  font-size: 0.75rem;
+  color: #d1d5db;
+  margin-top: 0.25rem;
+}
+.analytics-bar-profit { color: #60a5fa; }
+.analytics-bar-loss { color: #f87171; }
+.analytics-bar-rating { color: #fbbf24; }
