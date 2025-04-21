@@ -3,7 +3,7 @@ import React from 'react';
 const pairs = [
   'EUR/USD', 'USD/JPY', 'GBP/USD', 'USD/CHF', 'AUD/USD',
   'USD/CAD', 'NZD/USD', 'EUR/GBP', 'EUR/JPY', 'GBP/JPY',
-  'EUR/AUD', 'AUD/JPY', 'GBP/CHF', 'EUR/CAD', 'USD/SGD',
+  'EUR/AUD', 'AUD/JPY', 'GBP/CHF', 'EUR/CAD', 'USD/SGD', 'XAU/USD', // Gold/US Dollar
 ];
 
 export default function CurrencyPairSelector({ value, onChange }: { value: string; onChange: (pair: string) => void }) {
